@@ -1,6 +1,8 @@
 # Created by https://www.gitignore.io/api/python
 
 notebooks/WIP
+*.iml
+*.idea/
 
 ### Python ###
 # Byte-compiled / optimized / DLL files
