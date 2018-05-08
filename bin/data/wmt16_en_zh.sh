@@ -15,7 +15,7 @@ BASE_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )/../.." && pwd )"
 OUTPUT_DIR=${OUTPUT_DIR:-/tmp/wmt16_en_zh}
 echo "Writing to ${OUTPUT_DIR}. To change this, set the OUTPUT_DIR environment variable."
 echo "cleaning up all the existing corpus in the output directory..."
-rm $OUTPUT_DIR/*.$SRC_LANG $OUTPUT_DIR/*.$TGT_LANG
+rm $OUTPUT_DIR/*.$SRC_LANG $OUTPUT_DIR/*.$TGT_LANG  || true
 
 OUTPUT_DIR_DATA="${OUTPUT_DIR}/data"
 
